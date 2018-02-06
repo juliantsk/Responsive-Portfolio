@@ -1,0 +1,235 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
+    background-image: url("../images/dust_scratches.png");
+}
+
+h1,
+h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    margin-top: 0px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* header styling */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    padding: 0px;
+    width: 100%;
+}
+
+div.top {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+h1.header {
+    width: fit-content;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 30px;
+    position: relative;
+    float: left;
+    margin: 0px;
+}
+
+.navbar {
+    overflow: hidden;
+    position: relative;
+    padding: 30px 0px 30px 0px;
+    bottom: 0;
+    right: 0;
+}
+
+.navbar a {
+    color: #777777;
+    line-height: 20px;
+    height 20px;
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    list-style-type: none;
+    padding: 0px 20px 0px 20px;
+    border-right: 1px solid #777777;
+}
+
+#last {
+    border: none;
+    padding: 0px 0px 0px 20px;
+}
+
+.navbar a:hover {
+    background-color: #4aaaa5;
+    color: black;
+}
+
+
+/* END header styling */
+
+
+/* main styling */
+
+.wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    flex: 1 0 auto;
+}
+
+#content,
+#sidebar {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    display: block;
+    padding: 25px;
+}
+
+#content {
+    float: left;
+    width: 590px;
+}
+
+#content hr {
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+#sidebar {
+    float: right;
+    width: 210px;
+}
+
+img {
+    max-width: 33.3%;
+    height: auto;
+    float: left;
+}
+
+
+/* About page */
+
+img.profile {
+    max-width: 40%;
+    float: left;
+    padding: 15px;
+    padding-left: 0px;
+}
+
+
+/* END About page */
+
+
+/* Portfolio page */
+
+div.portfolio {
+    margin: 10px;
+    border: 0px;
+    float: left;
+    width: 270px;
+}
+
+div.portfolio:hover {
+    border 1px solid #777777;
+}
+
+div.portfolio img {
+    max-width: 100%;
+}
+
+div.desc {
+    padding: 10px;
+    background-color: #4aaaa5;
+    position: relative;
+    top: 130px;
+    height: 40px;
+}
+
+h2.desc {
+    position: relative;
+    top: -185px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* END Portfolio page */
+
+
+/* Contact page */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    width: fit-content;
+    float: left;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #777777;
+}
+
+
+/* END main styling */
+
+
+/* footer styling */
+
+footer {
+    background-color: #666666;
+    border-top: 9px solid #4aaaa5;
+}
+
+p.footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 30px;
+    color: #dbdbdb;
+}
+
+
+/* END footer styling */
