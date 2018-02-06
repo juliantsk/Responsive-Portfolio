@@ -1,0 +1,38 @@
+/* Media Query */
+
+@media screen and (max-width: 640px) {
+    /* Header      */
+    div.top {
+        width: 100%;
+    }
+    h1.header {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding-left: 0px;
+    }
+    .navbar {
+        display: flex;
+        padding: 10px;
+        overflow: initial;
+        bottom: initial;
+        right: initial;
+    }
+    a.navbar {
+        margin: auto;
+        display: inline-block;
+    }
+    #content,
+    #sidebar {
+        width: 94%;
+        margin: 0px 5px 40px 5px;
+    }
+    img.profile {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 980px) {}
