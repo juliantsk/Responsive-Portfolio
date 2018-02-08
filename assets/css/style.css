@@ -57,23 +57,27 @@ h1.header {
 
 .navbar {
     overflow: hidden;
+    display: flex;
     position: relative;
     padding: 30px 0px 30px 0px;
-    bottom: 0;
-    right: 0;
+    float: right;
 }
 
 .navbar a {
     color: #777777;
+    margin: auto;
     line-height: 20px;
     height: 20px;
-    float: right;
     display: block;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
     list-style-type: none;
     padding: 0px 20px 0px 20px;
+}
+
+#last {
+    padding-right: 0px;
 }
 
 .navbar a:hover {
@@ -88,12 +92,13 @@ h1.header {
 /* main styling */
 
 .wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
     flex: 1 0 auto;
+    position: relative;
 }
 
 #content,
@@ -112,6 +117,7 @@ h1.header {
 #content hr {
     border-top: 3px solid rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
 }
 
 #sidebar {
@@ -120,7 +126,7 @@ h1.header {
 }
 
 img {
-    max-width: 33.3%;
+    max-width: 60px;
     height: auto;
     float: left;
 }
@@ -131,8 +137,8 @@ img {
 img.profile {
     max-width: 40%;
     float: left;
-    padding: 15px;
-    padding-left: 0px;
+    margin: 16px;
+    margin-left: 0px;
 }
 
 
@@ -142,14 +148,18 @@ img.profile {
 /* Portfolio page */
 
 div.portfolio {
-    margin: 10px;
+    margin: 22px auto;
     border: 0px;
+    display: block;
     float: left;
-    width: 270px;
+    max-width: 47%;
+    position: relative;
 }
 
-div.portfolio:hover {
-    border 1px solid #777777;
+div.portfolio:nth-of-type(2n) {
+    margin: 22px 0px;
+    margin-right: 0px;
+    float: right;
 }
 
 div.portfolio img {
@@ -157,16 +167,17 @@ div.portfolio img {
 }
 
 div.desc {
-    padding: 10px;
+    padding: 10px 0px;
     background-color: #4aaaa5;
-    position: relative;
-    top: 130px;
+    position: absolute;
+    bottom: 10px;
     height: 40px;
+    width: 100%;
 }
 
 h2.desc {
     position: relative;
-    top: -185px;
+    bottom: -7px;
     color: #ffffff;
     text-align: center;
 }
